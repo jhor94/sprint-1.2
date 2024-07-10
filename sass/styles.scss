@@ -1,0 +1,212 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$primary: #5265E1;
+$secondary: #FA5959;
+
+
+$theme-colors: (
+    "primary":$primary,
+    "secondary":$secondary,
+);
+
+$custom-colors: (
+  "custom-color": #5265E1
+);
+
+$accordion-icon-active-color: $secondary;
+
+html,
+body {
+  overflow-x: hidden ;
+}
+
+.btn-secondary {
+  background-color: $secondary;
+  border-color:$body-bg
+}
+
+.btn-submit {
+  background-color: $secondary;
+  border-color: none;
+}
+
+.btn-submit:hover {
+  color:$secondary;
+  background-color: $body-bg;
+  border-color: $secondary;
+}
+
+.btn-primary:hover {
+  color: $primary;
+  background-color: $body-bg;
+  border-color: $primary;
+}
+
+.btn-firefox:hover{
+  color: dark;
+  background-color: $body-bg;
+  border-color: $dark;
+}
+
+.img-main {
+  position: relative;
+  z-index: 1;
+}
+
+.blue-right-shadow {
+  position: absolute;
+  z-index: -1;
+  width: 85%;
+  height: 70%;
+  top:35%;
+  background-color: $primary;
+  left: 30%;
+  border-bottom-left-radius: 8rem;
+}
+
+.blue-left-shadow {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 80%;
+  top:35%;
+  background-color: $primary;
+  border-bottom-left-radius: 8rem;
+}
+
+//cards
+ #cards {
+  display: flex;
+  height: 550px;
+  justify-content: center;
+ }
+
+ #cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: calc(100% /4);
+  height: 80%;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px rgb(121,119,119);
+  margin:  20px;
+ }
+
+ #chrome {
+  align-self: flex-start;
+ }
+
+ #firefox {
+  align-self: center;
+ }
+
+ #opera {
+  align-self: flex-end;
+ }
+
+
+//media queries
+
+@media (max-width: 768px){
+  #cards {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    min-width: 320px;
+    height: 1000px;
+    margin: 0 auto;
+  }
+
+  #cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+    height: 90%;
+    align-items: center;
+    border-radius: 15px;
+    margin: 20px;
+  }
+
+  #chrome {
+    align-self: center;
+   }
+  
+   #firefox {
+    align-self: center;
+   }
+  
+   #opera {
+    align-self: center;
+   }
+
+}
+
+//tabs
+
+.nav-link:hover{
+  color:$secondary;
+
+}
+.nav-link-tab{
+  color: #6c757c;//gris
+  border: none;
+  background-color: transparent;
+}
+.nav-link-tab.active,
+.nav-link-tab:focus{
+  color: #343a40;
+  border: none;
+  background-color: transparent;
+}
+
+.nav-link-tab.active:after,
+.nav-link:focus::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #6c757d;
+  margin-top:5px;
+}
+.nav-link-tab.active,
+.nav-link-tab:focus{
+  color: #343a40; // gris oscuro
+}
+//acordion
+
+.accordion-button:hover{
+  color: $secondary;
+}
+
+.accordion-button-focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+$accordion-button-icon: url(/img/icon-arrow.svg);
+$accordion-icon-active-color: $secondary;
+
+
+
+
+
+
+// Merge the maps
+
+
+
+
+//@import "./node_modules/bootstrap/scss/bootstrap.scss";
+//@import "./node_modules/bootstrap/scss/functions";
+//@import "./node_modules/bootstrap/scss/variables";
+//@import "./node_modules/bootstrap/scss/mixins";
