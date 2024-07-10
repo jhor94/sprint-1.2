@@ -16,6 +16,8 @@ $custom-colors: (
   "custom-color": #5265E1
 );
 
+
+
 $accordion-icon-active-color: $secondary;
 
 html,
@@ -125,7 +127,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 70%;
+    width: 90%;
     height: 90%;
     align-items: center;
     border-radius: 15px;
@@ -179,11 +181,11 @@ body {
 }
 //acordion
 
-.accordion-button:hover{
+.accordion-button:hover {
   color: $secondary;
 }
 
-.accordion-button-focus {
+.accordion-button:focus {
   border-color: transparent !important;
   box-shadow: none !important;
 }
@@ -197,6 +199,10 @@ $accordion-button-icon: url(/img/icon-arrow.svg);
 $accordion-icon-active-color: $secondary;
 
 
+.footer-element {
+  color: white;
+  text-decoration: none;
+};
 
 
 
